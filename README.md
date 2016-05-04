@@ -1,2 +1,0 @@
-# bpmworkbench
-IBM BPM Workbench
