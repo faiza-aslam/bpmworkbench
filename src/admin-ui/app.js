@@ -2,9 +2,11 @@
 
 var express = require('./node_modules/express');
 var session = require('./node_modules/express-session');
-var bpmRestApi = require('./bpmrestapi')();
+var processApi = require('./bpmrestapi/processApi')();
+var taskApi= require('./bpmrestapi/taskApi')();
 var uuid = require('./node_modules/uuid');
 var async= require('./node_modules/async');
+var _request=require('./node_modules/request'); // only used for /api/setServerInfo
 
 var app = express();
 var router = express.Router();
@@ -25,16 +27,38 @@ app.use(session({
 }));
 
 // routes
-
 router.get("/", function(request, response, route) {
-	response.redirect(request.session.serverInfo ? "/ui/index.html" : "/ui/index.html#login");
+	response.redirect(request.session.serverInfo ? "/ui/index.html#/home" : "/ui/index.html#server-info");
 });
 
-router.get("/api/processApps", function(request, response) {	
-	async.seq(bpmRestApi.getProcessApplications)(function(err, results) {
-		response.json(results);
-	});
+
+// sends call to bpm for server validation
+router.get("/api/setServerInfo", function(request, response, route) {
+	_request({
+		uri: 'http://' + request.query.host + ':' + request.query.port + '/rest/bpm/wle/v1/systems',
+		auth: {
+			username: request.query.userName,
+			password: request.query.password,
+			sendImmediately: true
+		},
+		method: 'GET'
+	}, function(error, _response, body) {
+		var failed=(error || body==='');
+		if(!failed) {
+			request.session.serverInfo=request.query;
+		}
+		response.json({result: failed ? 'error' : 'OK'});
+	});	
 });
+
+// return connected server info
+router.get("/api/getServerInfo", function(request, response, route) {
+	response.json(request.session.serverInfo);
+});
+
+// set processApi routes
+processApi.setRoutes(router);
+taskApi.setRoutes(router);
 
 // use router
 app.use('/', router);

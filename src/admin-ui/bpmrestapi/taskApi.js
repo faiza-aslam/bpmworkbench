@@ -1,7 +1,10 @@
-module.exports=function(serverInfo){
+module.exports=function(){
+
+	var _request = require('../node_modules/request');
+
 	return {
-		getTaskStatus:function(taskId) {
-			return {};
+		setRoutes : function(router) {
+
 		}
 	}
 }

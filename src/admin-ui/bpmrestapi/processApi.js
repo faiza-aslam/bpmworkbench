@@ -1,21 +1,27 @@
-module.exports = function(serverInfo) {
-	var request = require('../node_modules/request');
+module.exports = function() {
+	var _request = require('../node_modules/request');
 
 	return {
-		getCurrentState: function(instanceId, callback) {
-			return {};
-		},
-		getProcessApplications: function(callback) {
-			request({
-				uri: 'http://pmo-vm-01:9080/rest/bpm/wle/v1/processApps',
-				auth: {
-					username: 'cell_admin',
-					password: 'passw0rd',
-					sendImmediately: true
-				},
-				method: 'GET'
-			}, function(error, response, body) {
-				callback(null, JSON.parse(body).data);
+		setRoutes: function(router) {
+
+			// get process applications
+			router.get("/api/processApplications", function(request, response) {
+				_request({
+					uri: 'http://' + request.session.serverInfo.host + ':' + request.session.serverInfo.port + '/rest/bpm/wle/v1/processApps',
+					auth: {
+						username: request.session.serverInfo.userName,
+						password: request.session.serverInfo.password,
+						sendImmediately: true
+					},
+					method: 'GET'
+				}, function(error, _response, body) {
+					response.json(JSON.parse(body).data);
+				});
+			});
+
+			// get current state of an instance
+			router.get("/api/currentState", function(request, response) {
+				// do something with _request ...
 			});
 		}
 	}

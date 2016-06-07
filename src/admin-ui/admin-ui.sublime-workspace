@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getProcessApplications"
+			],
+			[
 				"canView",
 				"canViewVersions"
 			],
@@ -16,27 +20,11 @@
 	"buffers":
 	[
 		{
-			"file": "styles/styles.less",
+			"contents": "",
 			"settings":
 			{
-				"buffer_size": 60,
+				"buffer_size": 0,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 1190,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "styles/styles.css",
-			"settings":
-			{
-				"buffer_size": 61,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -64,9 +52,13 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "gulp",
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
 			[
 				"gulp",
 				"Gulp"
@@ -86,10 +78,6 @@
 			[
 				"package control",
 				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
 			],
 			[
 				"browpackage ",
@@ -136,7 +124,7 @@
 				"Snippet: #!/usr/bin/env"
 			]
 		],
-		"width": 416.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -157,20 +145,46 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components/bootstrap",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components/bootstrap/dist",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components/bootstrap/dist/css",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/dist"
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui"
 	],
 	"file_history":
 	[
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/Gruntfile.js",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/load-grunt-tasks/index.js",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/styles.css",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/styles.less",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/templates/header.tpl",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/js/ui.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/Gruntfile.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/dist/styles.min.css",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower.json",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/dist/styles.css",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components/font-awesome/less/font-awesome.less",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/templates/serverDetails.tpl",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/index.html",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/templates/home.tpl",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/app.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/js/main.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bpmrestapi/taskApi.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bpmrestapi/processApi.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/request/index.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bpmrestapi/index.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components/angular-ui-router/release/angular-ui-router.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/js/require.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/admin-ui.sublime-project",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/test.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/express/lib/express.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/uuid/uuid.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/express/index.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/package.json",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/express/lib/application.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/request/request.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bpmrestapi/processapi.js",
+		"/C/Users/mehdi.raza/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/mehdi.raza/AppData/Roaming/Sublime Text 3/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/C/Users/mehdi.raza/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/mehdi.raza/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/styles.css",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components/bootstrap/less/normalize.less",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components/bootstrap/less/bootstrap.less",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/load-grunt-tasks/index.js",
 		"/C/Users/mehdi.raza/workspaces/smartadmin/index.html",
 		"/C/Users/mehdi.raza/workspaces/smartadmin/js/requirejs.config.js",
 		"/C/Users/mehdi.raza/workspaces/angular/angular.sublime-project",
@@ -182,7 +196,6 @@
 		"/C/Users/mehdi.raza/AppData/Roaming/npm/gulp.cmd",
 		"/C/Users/mehdi.raza/workspaces/angular/module1/js/controller/account.js",
 		"/C/Users/mehdi.raza/AppData/Roaming/Sublime Text 3/Packages/JSLint/Default.sublime-keymap",
-		"/C/Users/mehdi.raza/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/mehdi.raza/workspaces/etisalat/etisalat-security/target/classes/ae/etisalat/security/websphere/userregistry/DatabaseManager.class",
 		"/C/Users/mehdi.raza/Desktop/hec-document-list-files/documentList-hec.js",
 		"/C/Users/mehdi.raza/Desktop/basic_info.html",
@@ -193,7 +206,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -207,6 +220,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"zero",
+			"small",
+			"router",
 			"cmis:name",
 			"contentStreamFileName",
 			"contentStreamFileName\ncontentStreamFileName",
@@ -264,74 +280,15 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "styles/styles.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 60,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60,
-								60
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1190,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								327,
-								327
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "styles/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 61,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -344,13 +301,14 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -389,7 +347,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 100.0
+		"height": 355.0
 	},
 	"output.find_results":
 	{
