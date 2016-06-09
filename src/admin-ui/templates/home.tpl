@@ -1,3 +1,3 @@
-<div ng-controller="ServerDetailsController">
-	This is home.tpl
+<div ng-controller="ServerDetailsController" class="home">
+	<process-applications></process-applications>
 </div>

@@ -19,10 +19,12 @@
     <script src="/js/require.js" data-main="/js/main.js"></script>
   </head>
   <body>
-    <div>
-      <bpm-workbench-header></bpm-workbench-header>
+    <div class="overlay" style="height:100%; width:100%;position:absolute;top:0;z-index:-1000">
+      <div>
+        <bpm-workbench-header></bpm-workbench-header>
+      </div>
+      <div ui-view></div>
     </div>
-    <div ui-view></div>
     <!-- <div class="row">
       <div class="col-lg-12">
         <label for="processApps">Select Process Application</label>

@@ -19,14 +19,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -145,23 +137,27 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui"
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bpmrestapi",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/templates"
 	],
 	"file_history":
 	[
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/styles.less",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/templates/header.tpl",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/templates/serverDetails.tpl",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/app.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/js/home.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/js/main.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/index.html",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/js/ui.js",
+		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/styles.less",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/Gruntfile.js",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/dist/styles.min.css",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower.json",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/styles/dist/styles.css",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bower_components/font-awesome/less/font-awesome.less",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/templates/serverDetails.tpl",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/index.html",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/templates/home.tpl",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/app.js",
-		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/js/main.js",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bpmrestapi/taskApi.js",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/bpmrestapi/processApi.js",
 		"/C/Users/mehdi.raza/workspaces/personal/bpm-workbench-project/src/admin-ui/node_modules/request/index.js",
@@ -280,37 +276,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

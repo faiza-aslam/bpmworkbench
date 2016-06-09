@@ -33,7 +33,7 @@ router.get("/", function(request, response, route) {
 
 
 // sends call to bpm for server validation
-router.get("/api/setServerInfo", function(request, response, route) {
+router.get("/api/connect", function(request, response, route) {
 	_request({
 		uri: 'http://' + request.query.host + ':' + request.query.port + '/rest/bpm/wle/v1/systems',
 		auth: {
@@ -54,6 +54,12 @@ router.get("/api/setServerInfo", function(request, response, route) {
 // return connected server info
 router.get("/api/getServerInfo", function(request, response, route) {
 	response.json(request.session.serverInfo);
+});
+
+// return connected server info
+router.get("/api/disconnect", function(request, response, route) {
+	delete request.session.serverInfo;
+	response.json({result:'OK'});
 });
 
 // set processApi routes
